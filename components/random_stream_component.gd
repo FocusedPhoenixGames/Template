@@ -6,7 +6,7 @@ extends AudioStreamPlayer
 @export var maxPitch = 1.1
 
 
-func play_random():
+func play_random() -> void:
 	if streams == null || streams.size() == 0:
 		return
 	

@@ -1,15 +1,17 @@
 extends Area2D
 class_name HurtboxComponent
 
-@export var healthComponent: Node
+signal hit
+
+@export var healthComponent: HealthComponent
 @export var myHitboxComponent: HitboxComponent
 
 
-func _ready():
+func _ready() -> void:
 	area_entered.connect(on_area_entered)
 
 
-func on_area_entered(otherArea: Area2D):
+func on_area_entered(otherArea: Area2D) -> void:
 	if not otherArea is HitboxComponent:
 		return
 	
@@ -27,5 +29,6 @@ func on_area_entered(otherArea: Area2D):
 		return
 	
 	healthComponent.damage(hitboxComponent.damage)
-	hitboxComponent.start_attack_cooldown()
+	
+	hit.emit()
 
