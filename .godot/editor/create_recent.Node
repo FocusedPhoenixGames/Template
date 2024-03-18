@@ -1,12 +1,12 @@
-LinkButton
-Area2D
-Node
-Label
 VBoxContainer
+Label
 MarginContainer
 Panel
 PanelContainer
 CanvasLayer
+LinkButton
+Area2D
+Node
 HSlider
 AudioStreamPlayer
 Button
