@@ -1,0 +1,129 @@
+[gd_scene load_steps=3 format=3 uid="uid://whqv2y330fbm"]
+
+[ext_resource type="Script" path="res://scenes/ui/menus/options_screen.gd" id="1_1pod8"]
+[ext_resource type="PackedScene" uid="uid://blwf5biyyuc2h" path="res://scenes/ui/menus/sound_button.tscn" id="1_moljq"]
+
+[node name="OptionsScreen" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_1pod8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="OptionsContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="OptionsLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer"]
+layout_mode = 2
+text = "Options"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer"]
+layout_mode = 2
+
+[node name="MasterContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/MasterContainer"]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MasterSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/MasterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../../BackButton")
+focus_neighbor_bottom = NodePath("../../SfxContainer/SfxSlider")
+focus_next = NodePath("../../SfxContainer/SfxSlider")
+focus_previous = NodePath("../../BackButton")
+max_value = 1.0
+step = 0.01
+
+[node name="SfxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+
+[node name="SfxLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/SfxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="SfxSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/SfxContainer"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+layout_mode = 2
+focus_neighbor_top = NodePath("../../MasterContainer/MasterSlider")
+focus_neighbor_bottom = NodePath("../../MusicContainer/MusicSlider")
+focus_next = NodePath("../../MusicContainer/MusicSlider")
+focus_previous = NodePath("../../MasterContainer/MasterSlider")
+max_value = 1.0
+step = 0.01
+
+[node name="MusicContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/MusicContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/MusicContainer"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+layout_mode = 2
+focus_neighbor_top = NodePath("../../SfxContainer/SfxSlider")
+focus_neighbor_bottom = NodePath("../../WindowContainer/WindowButton")
+focus_next = NodePath("../../WindowContainer/WindowButton")
+focus_previous = NodePath("../../SfxContainer/SfxSlider")
+max_value = 1.0
+step = 0.01
+
+[node name="WindowContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+
+[node name="WindowLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/WindowContainer"]
+auto_translate_mode = 1
+layout_mode = 2
+text = "Window Mode"
+
+[node name="WindowButton" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/WindowContainer" instance=ExtResource("1_moljq")]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../../MusicContainer/MusicSlider")
+focus_neighbor_bottom = NodePath("../../BackButton")
+focus_next = NodePath("../../BackButton")
+focus_previous = NodePath("../../MusicContainer/MusicSlider")
+text = "Windowed"
+
+[node name="BackButton" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer" instance=ExtResource("1_moljq")]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../WindowContainer/WindowButton")
+focus_neighbor_bottom = NodePath("../MasterContainer/MasterSlider")
+focus_next = NodePath("../MasterContainer/MasterSlider")
+focus_previous = NodePath("../WindowContainer/WindowButton")
+text = "Back"
