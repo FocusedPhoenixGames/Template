@@ -13,8 +13,8 @@ func _ready() -> void:
 	windowButton.pressed.connect(on_window_button_pressed)
 	backButton.pressed.connect(on_back_button_pressed)
 	masterSlider.value_changed.connect(on_audio_slider_changed.bind("Master"))
-	sfxSlider.value_changed.connect(on_audio_slider_changed.bind("sfx"))
-	musicSlider.value_changed.connect(on_audio_slider_changed.bind("music"))
+	sfxSlider.value_changed.connect(on_audio_slider_changed.bind("Sfx"))
+	musicSlider.value_changed.connect(on_audio_slider_changed.bind("Music"))
 	masterSlider.grab_focus()
 	update_display()
 
@@ -25,8 +25,8 @@ func update_display() -> void:
 		windowButton.text = "Fullscreen"
 	
 	masterSlider.value = get_bus_volume_percent("Master")
-	sfxSlider.value = get_bus_volume_percent("sfx")
-	musicSlider.value = get_bus_volume_percent("music")
+	sfxSlider.value = get_bus_volume_percent("Sfx")
+	musicSlider.value = get_bus_volume_percent("Music")
 
 
 func get_bus_volume_percent(busName: String) -> float:

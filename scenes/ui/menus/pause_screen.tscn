@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://blwf5biyyuc2h" path="res://scenes/ui/menus/sound_button.tscn" id="1_6u508"]
 
 [node name="PauseScreen" type="CanvasLayer"]
+process_mode = 3
 script = ExtResource("1_0r31t")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -47,7 +48,6 @@ text = "Resume"
 
 [node name="OptionsButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("1_6u508")]
 unique_name_in_owner = true
-auto_translate_mode = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../ResumeButton")
 focus_neighbor_bottom = NodePath("../QuitButton")
@@ -57,7 +57,6 @@ text = "Options"
 
 [node name="QuitButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("1_6u508")]
 unique_name_in_owner = true
-auto_translate_mode = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../OptionsButton")
 focus_neighbor_bottom = NodePath("../ResumeButton")
