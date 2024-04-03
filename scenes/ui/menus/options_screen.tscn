@@ -106,16 +106,28 @@ text = "Window Mode"
 unique_name_in_owner = true
 layout_mode = 2
 focus_neighbor_top = NodePath("../../MusicContainer/MusicSlider")
-focus_neighbor_bottom = NodePath("../../BackButton")
-focus_next = NodePath("../../BackButton")
+focus_neighbor_bottom = NodePath("../../ControlsContainer/ControlsButton")
+focus_next = NodePath("../../ControlsContainer/ControlsButton")
 focus_previous = NodePath("../../MusicContainer/MusicSlider")
 text = "Windowed"
+
+[node name="ControlsContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ControlsButton" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer/ControlsContainer" instance=ExtResource("1_moljq")]
+unique_name_in_owner = true
+layout_mode = 2
+focus_neighbor_top = NodePath("../../WindowContainer/WindowButton")
+focus_neighbor_bottom = NodePath("../../BackButton")
+focus_next = NodePath("../../BackButton")
+focus_previous = NodePath("../../WindowContainer/WindowButton")
+text = "Change Controls"
 
 [node name="BackButton" parent="MarginContainer/PanelContainer/MarginContainer/OptionsContainer/VBoxContainer" instance=ExtResource("1_moljq")]
 unique_name_in_owner = true
 layout_mode = 2
-focus_neighbor_top = NodePath("../WindowContainer/WindowButton")
+focus_neighbor_top = NodePath("../ControlsContainer/ControlsButton")
 focus_neighbor_bottom = NodePath("../MasterContainer/MasterSlider")
 focus_next = NodePath("../MasterContainer/MasterSlider")
-focus_previous = NodePath("../WindowContainer/WindowButton")
+focus_previous = NodePath("../ControlsContainer/ControlsButton")
 text = "Back"

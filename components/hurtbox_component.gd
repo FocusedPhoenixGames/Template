@@ -4,7 +4,6 @@ class_name HurtboxComponent
 signal hit
 
 @export var healthComponent: HealthComponent
-@export var myHitboxComponent: HitboxComponent
 
 
 func _ready() -> void:
@@ -20,9 +19,6 @@ func on_area_entered(otherArea: Area2D) -> void:
 	
 	var hitboxComponent = otherArea as HitboxComponent
 	if hitboxComponent.get_parent() == get_parent():
-		return
-	
-	if hitboxComponent.isEnemy and myHitboxComponent.isEnemy:
 		return
 	
 	if healthComponent.dead:

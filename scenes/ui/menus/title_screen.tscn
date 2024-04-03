@@ -45,7 +45,6 @@ text = "Play"
 
 [node name="OptionsButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_mlrsy")]
 unique_name_in_owner = true
-auto_translate_mode = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../PlayButton")
 focus_neighbor_bottom = NodePath("../CreditsButton")
@@ -55,7 +54,6 @@ text = "Options"
 
 [node name="CreditsButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_mlrsy")]
 unique_name_in_owner = true
-auto_translate_mode = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../OptionsButton")
 focus_neighbor_bottom = NodePath("../QuitButton")
@@ -65,7 +63,6 @@ text = "Credits"
 
 [node name="QuitButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_mlrsy")]
 unique_name_in_owner = true
-auto_translate_mode = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../CreditsButton")
 focus_neighbor_bottom = NodePath("../PlayButton")

@@ -4,14 +4,18 @@ signal back_pressed
 
 @onready var windowButton: Button = $%WindowButton
 @onready var backButton: Button = $%BackButton
+@onready var controlsButton: Button = $%ControlsButton
 @onready var masterSlider: HSlider = $%MasterSlider
 @onready var sfxSlider: HSlider = $%SfxSlider
 @onready var musicSlider: HSlider = $%MusicSlider
+
+var controlsScene = preload("res://scenes/ui/menus/controls_screen.tscn")
 
 
 func _ready() -> void:
 	windowButton.pressed.connect(on_window_button_pressed)
 	backButton.pressed.connect(on_back_button_pressed)
+	controlsButton.pressed.connect(on_controls_button_pressed)
 	masterSlider.value_changed.connect(on_audio_slider_changed.bind("Master"))
 	sfxSlider.value_changed.connect(on_audio_slider_changed.bind("Sfx"))
 	musicSlider.value_changed.connect(on_audio_slider_changed.bind("Music"))
@@ -53,6 +57,17 @@ func on_window_button_pressed() -> void:
 
 func on_back_button_pressed() -> void:
 	back_pressed.emit()
+
+
+func on_controls_button_pressed() -> void:
+	var controlsInstance = controlsScene.instantiate()
+	add_child(controlsInstance)
+	controlsInstance.back_pressed.connect(on_controls_closed.bind(controlsInstance))
+
+
+func on_controls_closed(controlsInstance: Node) -> void:
+	controlsInstance.queue_free()
+	controlsButton.grab_focus()
 
 
 func on_audio_slider_changed(value: float, busName: String) -> void:

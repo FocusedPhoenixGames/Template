@@ -1,9 +1,10 @@
 VBoxContainer
-Label
 MarginContainer
+GridContainer
+CanvasLayer
+Label
 Panel
 PanelContainer
-CanvasLayer
 LinkButton
 Area2D
 Node
