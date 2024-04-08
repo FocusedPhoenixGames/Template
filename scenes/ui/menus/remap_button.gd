@@ -14,9 +14,9 @@ func _ready() -> void:
 	update_key_text()
 
 
-func _toggled(button_pressed):
-	set_process_unhandled_input(button_pressed)
-	if button_pressed:
+func _toggled(buttonPressed):
+	set_process_unhandled_input(buttonPressed)
+	if buttonPressed:
 		text = ". . . Awaiting Input. . ."
 		release_focus()
 	else:
