@@ -1,0 +1,21 @@
+	[b][u]Quick Summary[/u][/b]
+	This template project is for Godot 4.2.1 and helps cut out some of the more tedius things like making basic UI menus, button remaps, etc. It also comes with some generic components to speed up the game design process and help get prototypes off the ground faster. 
+	
+	
+	[b][u]My coding style[/u][/b]
+	As of right now, everything is set up in my style of coding which is slightly unconventional.
+
+	* variables are in cammelCase instead of snake_case
+	* @onready vars are placed above vars
+	* All variables are typed variables
+	* All functions have a return type
+
+	I find these changes easer to work with and read/ skim through at a glance, but feel free to change it how you like to match the rest of your project.
+	
+	
+	[b][u]Cider Wiki guide[/u][/b]
+	If you are interested in using this Cider Wiki addon to help document your project, you can find the guide here: 
+	[url]https://github.com/apples/cider_wiki[/url]
+	
+	
+	Outside of that, click on any page to get more detailed information on how everything works.

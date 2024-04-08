@@ -1,0 +1,1 @@
+	The [url]res://autoload[/url] folder contains all Scenes that automatically load and run throughout the entirety of the game. As of right now, it only consists of the [[>Music Player]] scene.

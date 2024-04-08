@@ -1,9 +1,9 @@
+Panel
 VBoxContainer
 MarginContainer
 GridContainer
 CanvasLayer
 Label
-Panel
 PanelContainer
 LinkButton
 Area2D
