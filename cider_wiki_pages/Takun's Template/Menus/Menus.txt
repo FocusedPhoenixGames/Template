@@ -1,0 +1,20 @@
+	The various menu scenes can be found in [url]res://scenes/ui[/url] and contain the following:
+	
+	[[>Title Screen]] - A main menu where the player can Start the game, exit the game, view credits, and access the Options menu
+	
+	[[>Options Screen]] - A menu screen where the player can adjust the volume, enable/disable fullscreen mode, and access the [[>Controls Screen]]
+	
+	[[>Credits Screen]] - A screen where the player can view Credits
+	
+	[[>Pause Screen]] - A screen that can be accessed in game. Can resume the game, access the Options Menu, and Quit to the [[>Title Screen]]
+	
+	[[>Controls Screen]] - A menu screen that allows the player to remap controls.
+	
+	[[>Sound Button]] - A button that plays random sounds when pressed.
+	
+	
+	[b]NOTE:[/b] 
+	
+	If you add any more elements to a screen, like a level select button for example, you will need to change the Focus Neighbors for each button to match your changes.
+	
+	[[img:img_1.webp]]

@@ -1,0 +1,20 @@
+The Title Screen is the main scene of the game and can access various other menus. 
+
+[[img:img_1.webp]]
+
+
+[b][u]How to use the Title Screen[/u][/b]
+
+	Change the text of the GameTitleLabel to the name of your game.
+
+[[img:img_2.webp]]
+
+
+	In the on_play_pressed(): function, change the scene to the scene you want.
+[[code:gd]]
+func on_play_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/intro/intro_screen.tscn")
+[[/]]
+
+
+	Everything else is straightforward and already set up. You just need to create your own themes, and readjust the MarginContainer if you change the view size of the game.

@@ -1,10 +1,9 @@
 extends CanvasLayer
 
-
 @onready var panelContainer = $%PanelContainer
 
 var optionsScreenScene = preload("res://scenes/ui/menus/options_screen.tscn")
-var isClosing
+var isClosing: bool
 
 
 func _ready() -> void:
@@ -33,9 +32,6 @@ func _unhandled_input(event) -> void:
 func close() -> void:
 	if isClosing:
 		return
-	
-	isClosing = true
-	#$AnimationPlayer.play_backwards("default")
 	
 	var tween = create_tween()
 	tween.tween_property(panelContainer, "scale", Vector2.ONE, 0)

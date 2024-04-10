@@ -50,25 +50,21 @@ size_flags_horizontal = 4
 text = "Art dude"
 
 [node name="MusicLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-auto_translate_mode = 1
 layout_mode = 2
 text = "Music"
 horizontal_alignment = 1
 
 [node name="LinkButton2" type="LinkButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Music dude"
 
 [node name="ProgrammingLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-auto_translate_mode = 1
 layout_mode = 2
 text = "Programming"
 horizontal_alignment = 1
 
 [node name="LinkButton3" type="LinkButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-auto_translate_mode = 1
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Programming dude"

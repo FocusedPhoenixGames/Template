@@ -1,0 +1,9 @@
+The [url]res://components[/url] contains some components that I think are universally good.
+
+	[[>Health Component]] - For anything that needs health. Players, enemies, destructible objects, etc. 
+	
+	[[>Hitbox Component]] - For anything that needs to deal damage when an Area2D is entered.
+	
+	[[>Hurtbox Component]] - For anything that needs to take damage when an Area2D is entered.
+	
+	[[>Random Stream Component]] - For anything that needs to play Audio when an action takes place.

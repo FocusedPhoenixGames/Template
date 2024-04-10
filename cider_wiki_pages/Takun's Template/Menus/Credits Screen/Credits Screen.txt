@@ -1,0 +1,8 @@
+The credits screen displays the credits for your game and is accessed through the [[Title Screen]].
+
+[[img:img_1.webp]]
+
+
+[b][u]How to use the Credits Screen[/u][/b]
+	
+	It's pretty straightforward, just change the labels and button text as you like. By default, they're Link Buttons, so you can aslo provide URL links that will open when clicked.

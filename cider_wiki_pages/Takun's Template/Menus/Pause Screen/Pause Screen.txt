@@ -1,0 +1,6 @@
+The pause screen can be brought up in your game. It automatically pauses the game and lets you resume, access the [[Options Screen]], or return to the [[Title Screen]]
+
+[[img:img_1.webp]]
+
+
+	There's nothing to be set up or changed here outside of the theme, but you will need to set up a Pause button in your project's Input Map settings and then add the Pause Screen to the scene tree.

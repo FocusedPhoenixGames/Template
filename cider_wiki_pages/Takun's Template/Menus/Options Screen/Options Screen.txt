@@ -1,0 +1,8 @@
+	The Options Screen is where you can adjust volume settings, turn on Full Screen mode, and access the controls menu.
+
+[[img:img_1.webp]]
+
+
+	The Options Screen can be accessed from the [[Title Screen]] and [[Pause Screen]]
+	
+	Everything is already set up and shouldn't require any work.

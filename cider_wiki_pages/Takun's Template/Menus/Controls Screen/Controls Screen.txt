@@ -1,0 +1,22 @@
+The Controls Screen allows the player to change their controls.
+
+[[img:img_2.webp]]
+
+
+	[b][u]How to use the Controls Screen[/u][/b]
+	
+	Set up your project's inputs by going to Project -> Project Settings -> Input Map
+	
+[[img:img_3.webp]]
+
+	Make sure you select Keycode (Latin Equivalent) when setting up your inputs.
+	
+[[img:img_4.webp]]
+
+
+	Go to the Controls Screen scene and add an element to the Array for each input you want the player to be able to adjust. This is case sensitive, so make sure they are typed exactly as they are in the Project's Input Map.
+	
+[[img:img_5.webp]]
+
+
+	And that's it. The Controls Screen will automatically set the Focus neighbors for you. And although it wasn't demonstrated, this also works for chaning button inputs on controllers.

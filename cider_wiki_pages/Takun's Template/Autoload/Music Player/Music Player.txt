@@ -1,1 +1,20 @@
 	The Music Player will automatically play songs as long as the game is running.
+	
+	[b][u]How to use the Music Player[/u][/b]
+	
+	Add an element to the Songs array for each song you want in the Music Player.
+	[[img:img_2.webp]]
+	
+	
+	And assign the songs you want in each element.
+	[[img:img_3.webp]]
+	
+	
+	To get the Music Player to play music, call the play_music() function from the MusicPlayer and pass in the song number of the song you wish to play.
+	
+[[code: gd]]
+func _ready() -> void:
+	MusicPlayer.play_music(0)
+[[/]]
+
+	By default, the Title Screen is set to play song 0. 
