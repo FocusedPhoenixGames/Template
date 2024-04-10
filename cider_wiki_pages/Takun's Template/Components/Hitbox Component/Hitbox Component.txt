@@ -1,0 +1,9 @@
+The Hitbox Component is used for anything that needs to deal damage. You can adjust the damage amount in the Inspector.
+
+[[img:img_1.webp]]
+
+[b][u]How to use the Hitbox Component[/u][/b]
+Instantiate the Hitbox Component in the scene. From there, simply adjust the damage amount, give it a child node of CollisionShape2D, and assign the correct Collision Layers and Masks that you want the Hitbox Component to interact with.
+
+[b]NOTE: [/b]
+You can assign multiple collision shapes to the Hitbox and have them be Enabled/ Disabled through code or an Animation Player to manage different attacks, but the they will all have the same damage amount unless changed through code.

@@ -1,0 +1,7 @@
+The Hurtbox Component is used for anything that is capable of taking damage. It will automatically interact with and assign damage to the [[Health Component]] when it comes in contact with a CollisionShape2D from a [[Hitbox Component]]
+
+[[img:img_1.webp]]
+
+
+[b][u]How to use the Hurtbox Component[/u][/b]
+Instantiate the Hutrbox Component in the scene you want to use it, instantiate a Health Component in the same scene, and then assign the Health Component to the Hurtbox Component. 

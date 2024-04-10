@@ -1,0 +1,20 @@
+The Health Component is used for anything that needs to keep track of health. This can be the player, enemies, or destructible objects.
+
+
+[b][u]How to use the Health Component[/u][/b]
+	Instantiate the HealthComponent as a child of the scene you want to assign the Health Component to.
+	
+[[img:img_1.webp]]
+
+
+	Change the Max Health in the inspector.
+	
+	[[img:img_3.webp]]
+	
+	
+[b][u]Signals[/u][/b]
+	The Health Component has two signals, health_changed and died. You can connect to these signals to do things like update health displays, or update an enemy kill counter, or whatever else you need.
+	
+	
+[b][u]Methods[/u][/b]
+	The Health Component has two methods that you should use: damage() and heal(). When used with the [[Hurtbox Component]] it will automatically call the damage() function and pass through the damage from any [[Hitbox Component]] that's on the same collision layer and mask.

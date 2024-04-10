@@ -4,7 +4,6 @@ The Controls Screen allows the player to change their controls.
 
 
 	[b][u]How to use the Controls Screen[/u][/b]
-	
 	Set up your project's inputs by going to Project -> Project Settings -> Input Map
 	
 [[img:img_3.webp]]

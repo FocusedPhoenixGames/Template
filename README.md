@@ -24,3 +24,6 @@ This template contains:
 - Hurtbox Component
 - Random Stream Component (plays random sfx sounds)
 - Music Player
+
+
+Read through the pages on the Wiki tab for guides on how to use everything.

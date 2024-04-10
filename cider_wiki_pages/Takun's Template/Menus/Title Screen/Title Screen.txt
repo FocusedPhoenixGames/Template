@@ -4,7 +4,6 @@ The Title Screen is the main scene of the game and can access various other menu
 
 
 [b][u]How to use the Title Screen[/u][/b]
-
 	Change the text of the GameTitleLabel to the name of your game.
 
 [[img:img_2.webp]]

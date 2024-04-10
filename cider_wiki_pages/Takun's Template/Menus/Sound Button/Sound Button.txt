@@ -1,7 +1,6 @@
 The Sound Button plays a random sound when pressed.
 
 [b][u]How to use[/u][/b]
-
 	Simply add the different UI sounds to the RandomStreamComponent's Streams array and you're done.
 
 [[img:img_1.webp]]

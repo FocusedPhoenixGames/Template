@@ -1,10 +1,2 @@
-res://autoload/music_player.tscn
-res://addons/cider_wiki/cider_theme.tres
-res://scenes/ui/menus/title_screen.tscn
-res://scenes/ui/menus/options_screen.tscn
-res://scenes/ui/menus/pause_screen.tscn
 res://components/random_stream_component.tscn
-res://scenes/ui/menus/controls_screen.tscn
-res://scenes/ui/menus/pause_screen.gd
-res://scenes/ui/menus/sound_button.tscn
-res://scenes/ui/menus/credits_screen.tscn
+res://addons/cider_wiki/cider_theme.tres

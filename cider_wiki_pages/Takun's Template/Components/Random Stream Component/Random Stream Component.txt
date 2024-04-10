@@ -1,0 +1,8 @@
+The Random Stream Component can automatically play SFX sounds that you assign to it.
+
+[[img:img_1.webp]]
+
+
+[b][u]How to use the Random Stream Component[/u][/b]
+Instantiate the Random Stream Component as the child of a scene you want. From there you add more elements to the Stream Array and drop in the audio files you'd like to play.
+After that you can connect to it through code. A common use case would be to connect to a [[Hurtbox Component]]'s hit signal and then playing having the Random Stream Component play_random()

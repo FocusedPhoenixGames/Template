@@ -1,7 +1,6 @@
 	The Music Player will automatically play songs as long as the game is running.
 	
 	[b][u]How to use the Music Player[/u][/b]
-	
 	Add an element to the Songs array for each song you want in the Music Player.
 	[[img:img_2.webp]]
 	
